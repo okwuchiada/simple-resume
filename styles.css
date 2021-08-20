@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    height: 45vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em;
+    margin: 2.5em 0;
+    background-color: #ac3e12;
+    color: #fafaff;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 50%;
+    position: relative;
+    opacity: .5;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 50%;
+    opacity: .8;
+    left: 20%;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 50%;
+    opacity: .5;
+    right: 20%;
+}
+
+.name__id {
+    margin: 1rem;
+}
+
+.name__id h1 {
+    margin: 1rem 0;
+}
+
+.name__id h3 {
+    text-align: center;
+}
+
+.resume__contact {
+    padding: 2rem;
+    border-left: 1px solid #fafaff;
+}
+
+.resume__contact h3 {
+    margin-bottom: 1rem;
+}
+
+.resume__contact a {
+    display: block;
+    margin: .5rem;
+    color: #fafaff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem 5rem;
+}
+
+.resume {
+    text-align: justify;
+}
+
+.resume h3 {
+    background-color: #ac3e12;
+    width: max-content;
+    color: #fafaff;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.resume h4 {
+    font-size: 20px;
+    margin: .5rem 0;
+}
+
+.role,
+.degree {
+    font-style: italic;
+}
+
+.date {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.resume p {
+    line-height: 1.5rem;
+}
+
+.resume__cert img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.resume ul {
+    list-style: square;
+    margin-top: 1rem;
+}
+
+.resume ul li {
+    margin: .5rem;
+    color: #444;
+}
+
+.skill_tool p {
+    margin-top: 1rem;
+    font-weight: bold;
+}
